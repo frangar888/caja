@@ -1,0 +1,14 @@
+items:[
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"1A76977E-75E1-4B67-8351-17A391C1D227"
+}
+],
+name:"p_caja_inicio",
+onShowMethodID:"5654243B-6AB7-41B1-8031-391B374EBBF1",
+showInMenu:true,
+styleName:"estilo",
+typeid:3,
+uuid:"EF75FA62-CCEE-4567-A728-1422149496C8"
