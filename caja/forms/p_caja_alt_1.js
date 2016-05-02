@@ -131,4 +131,21 @@ function calcularTotales(){
 	vl_saldo_periodo = forms.p_caja_ingresos_alt_1.aggr_ing_imp_total - forms.p_caja_egresos_alt_1.aggr_egr_imp_total
 	vl_saldo_ini = globals.obtenerSaldoIni(globals.vg_fecha_inicial)
 	vl_saldo_fin = vl_saldo_ini + vl_saldo_periodo
+	if(vl_saldo_fin <= 0){
+		elements.vl_saldo_fin.bgcolor = '#ff4242'
+	}else{
+		elements.vl_saldo_fin.bgcolor = '#00ff80'
+	}
+	
+	if(vl_saldo_periodo <= 0){
+		elements.vl_saldo_periodo.bgcolor = '#ff4242'
+	}else{
+		elements.vl_saldo_periodo.bgcolor = '#00ff80'
+	}
+	
+	if(vl_saldo_ini <= 0){
+		elements.vl_saldo_ini.bgcolor = '#ff4242'
+	}else{
+		elements.vl_saldo_ini.bgcolor = '#00ff80'
+	}
 }

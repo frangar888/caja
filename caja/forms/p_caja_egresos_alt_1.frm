@@ -48,16 +48,16 @@ typeid:19,
 uuid:"535D7ED1-EDA3-40F1-BC7E-56026BD7197E"
 },
 {
+background:"#80ff80",
 dataProviderID:"aggr_egr_imp_total",
 editable:false,
-fontType:"Trebuchet MS,0,16",
+fontType:"Trebuchet MS,0,18",
 formIndex:9,
 format:"#,###.00",
 horizontalAlignment:4,
 location:"122,393",
 name:"vl_total_egresos",
 size:"113,33",
-styleClass:"disable",
 text:"Vl Total Ingresos",
 typeid:4,
 uuid:"55779543-89A0-4BAA-B2C6-D035F2D295EF"

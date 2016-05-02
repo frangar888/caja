@@ -38,16 +38,16 @@ typeid:7,
 uuid:"218F737C-1387-4CFB-BA92-584B895F1290"
 },
 {
+background:"#80ff80",
 dataProviderID:"aggr_ing_imp_total",
 editable:false,
-fontType:"Trebuchet MS,0,16",
+fontType:"Trebuchet MS,0,18",
 formIndex:9,
 format:"#,###.00",
 horizontalAlignment:4,
 location:"120,393",
 name:"vl_total_ingresos",
 size:"113,33",
-styleClass:"disable",
 text:"Vl Total Ingresos",
 typeid:4,
 uuid:"2CF8AFDA-212F-4797-8515-763EB20D5FD0"
