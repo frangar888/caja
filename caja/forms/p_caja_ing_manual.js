@@ -67,6 +67,6 @@ function onActionGrabar(event) {
 	}
 	conc_nombre = cj_ingresos_to_cj_conceptos.conc_nombre
 	databaseManager.saveData()
-	forms[vl_form_padre].controller.show()
+	//forms[vl_form_padre].controller.show()
 	application.getWindow('nuevoIngManual').hide()
 }
