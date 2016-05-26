@@ -163,7 +163,7 @@ typeid:7,
 uuid:"B50C65C9-ADC2-4C59-B314-3B3D9F984113"
 },
 {
-dataProviderID:"conc_cod",
+dataProviderID:"cj_egresos_to_cj_conceptos.conc_nombre",
 displayType:10,
 fontType:"Trebuchet MS,0,15",
 formIndex:25,
@@ -172,8 +172,7 @@ name:"conc_nombre",
 size:"353,20",
 text:"Conc Nombre",
 typeid:4,
-uuid:"E5A57C68-7F55-4DC4-8982-7C0C17AD8178",
-valuelistID:"4616C22B-50A7-48F7-A56D-3467FB158C5D"
+uuid:"E5A57C68-7F55-4DC4-8982-7C0C17AD8178"
 },
 {
 dataProviderID:"cj_desc",

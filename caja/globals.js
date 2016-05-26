@@ -15,13 +15,13 @@ var args = new Array()
 	var result = null;
 	if (displayValue == null && realValue == null) 
 	{
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 order by conc_cod asc ", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 and admite_manual = 0 order by conc_cod asc ", args, -1);
 	} 
 	else if (displayValue != null) 
 	{
 		// TYPE_AHEAD filter call, return a filtered list
 		args = [, "%" + displayValue + "%",displayValue + "%"]
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 and (conc_cod like ? OR conc_nombre like ?) order by conc_cod asc", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 and admite_manual = 0 and (conc_cod like ? OR conc_nombre like ?) order by conc_cod asc", args, -1);
 
 	} 
 	else if (realValue != null) 
@@ -29,7 +29,7 @@ var args = new Array()
 		// real object not found in the current list, return 1 row with display,realvalue that will be added to the current list
 		// dont return a complete list in this mode because that will be added to the list that is already there
 		args = [realValue];
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 and conc_cod = ?", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 0 and admite_manual = 0 and conc_cod = ?", args, -1);
 
 	}
 	return result;
@@ -52,13 +52,13 @@ function getDataSetForValueList_cj_conceptos_egr(displayValue, realValue, record
 	var result = null;
 	if (displayValue == null && realValue == null) 
 	{
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 order by conc_cod asc ", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 and admite_manual = 0 order by conc_cod asc ", args, -1);
 	} 
 	else if (displayValue != null) 
 	{
 		// TYPE_AHEAD filter call, return a filtered list
 		args = [, "%" + displayValue + "%",displayValue + "%"]
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 and (conc_cod like ? OR conc_nombre like ?) order by conc_cod asc", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 and admite_manual = 0 and (conc_cod like ? OR conc_nombre like ?) order by conc_cod asc", args, -1);
 
 	} 
 	else if (realValue != null) 
@@ -66,7 +66,7 @@ function getDataSetForValueList_cj_conceptos_egr(displayValue, realValue, record
 		// real object not found in the current list, return 1 row with display,realvalue that will be added to the current list
 		// dont return a complete list in this mode because that will be added to the list that is already there
 		args = [realValue];
-		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 and conc_cod = ?", args, -1);
+		result =  databaseManager.getDataSetByQuery("peluqueria", "select concat(cast(conc_cod as char),'-',conc_nombre), conc_cod from cj_conceptos where conc_tipo = 1 and admite_manual = 0 and conc_cod = ?", args, -1);
 
 	}
 	return result;

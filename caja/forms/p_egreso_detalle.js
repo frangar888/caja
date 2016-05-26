@@ -69,7 +69,7 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"CCE52548-1378-41EF-9EF9-6DD90100BBE1"}
  */
 function onActionVerVta(event) {
-	forms['p_ventas_detalle'].vl_form_padre = forms.p_caja_alt_1.controller.getName()
+	forms['p_ventas_detalle'].vl_form_padre = 'p_caja_alt_1'
 	forms['p_ventas_detalle'].controller.loadRecords(venta_id)
 	application.getWindow('detalleEgr').hide()
 	application.showForm('p_ventas_detalle')

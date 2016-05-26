@@ -58,6 +58,17 @@ typeid:7,
 uuid:"57E4AA6B-D70E-45C3-9BBF-23AD08E8AA4D"
 },
 {
+formIndex:27,
+labelFor:"vendedor_adn_id",
+location:"42,238",
+name:"vendedor_adn_id_label",
+size:"91,20",
+styleClass:"fieldlabel",
+text:"Empleado:",
+typeid:7,
+uuid:"611FB5E9-3FAC-487C-A3D8-9E083C9CAB24"
+},
+{
 formIndex:6,
 imageMediaID:"AFAF5472-3C5F-4A8F-B550-DF92FCED0766",
 location:"236,66",
@@ -111,7 +122,7 @@ typeid:7,
 uuid:"A95F658C-3274-48CE-8C33-A0D7A126910E"
 },
 {
-dataProviderID:"conc_cod",
+dataProviderID:"cj_ingresos_to_cj_conceptos.conc_nombre",
 displayType:10,
 fontType:"Trebuchet MS,0,15",
 formIndex:25,
@@ -120,8 +131,7 @@ name:"conc_nombre",
 size:"353,20",
 text:"Conc Nombre",
 typeid:4,
-uuid:"B49ED5E4-A0DD-4169-B54E-95A69E134186",
-valuelistID:"702A8B06-178C-4959-90E7-A4CD8A582899"
+uuid:"B49ED5E4-A0DD-4169-B54E-95A69E134186"
 },
 {
 formIndex:24,
@@ -163,6 +173,18 @@ styleClass:"disable",
 text:"Cj Ing Importe",
 typeid:4,
 uuid:"BE44863A-A32F-46E9-B128-252BAF16BA81"
+},
+{
+dataProviderID:"cj_ingresos_to_adn_ven.adn_nombre",
+editable:false,
+formIndex:28,
+location:"138,238",
+name:"vendedor_adn_id",
+size:"353,20",
+styleClass:"disable",
+text:"Vendedor Adn Id",
+typeid:4,
+uuid:"C35BBD70-C456-425E-9187-9E7A227C99E3"
 },
 {
 anchors:11,
